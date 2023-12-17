@@ -8,6 +8,8 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Index() {
+  throw Error('oh no!')
+
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
       <h1>Welcome to Remix</h1>
