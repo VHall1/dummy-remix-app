@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import invariant from "tiny-invariant";
 
 export const meta: MetaFunction = () => {
   return [
@@ -8,7 +9,8 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Index() {
-  throw Error('oh no!')
+  // throw Error('oh no!')
+  invariant(false, "external error");
 
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
